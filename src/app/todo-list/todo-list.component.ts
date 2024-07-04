@@ -9,6 +9,8 @@ import { TodoService } from '../todo.service';
 export class TodoListComponent {
 
   todos: string[]=[];
+  
+
   constructor(private todoService : TodoService){
     this.todos=this.todoService.getTodos();
   }
